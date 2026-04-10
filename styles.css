@@ -1525,3 +1525,10 @@ nav {
   }
 }
 
+
+
+.contain-image {
+  object-fit: contain !important;
+  background: #fff;
+  padding: 12px;
+}
