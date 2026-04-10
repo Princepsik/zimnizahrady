@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poptávka bazénu zdarma</title>
+  <meta name="description" content="Nezávazná poptávka na zhotovení bazénu. Vyplňte typ bazénu, rozměry a technologii, připravíme orientační nabídku.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <div>Realizace zimních zahrad, zastřešení bazénů, zasklívání a oken po celé ČR včetně Prahy</div>
+      <div><strong>Tel.:</strong> <a href="tel:+420606212000">+420 606 212 000</a> &nbsp; | &nbsp; <strong>E-mail:</strong> <a href="mailto:centrumzahrad@email.cz">centrumzahrad@email.cz</a></div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo-wrap">
+        <img src="logo.jpg" alt="Logo společnosti">
+        <div class="brand-text">
+          <strong>Zimní zahrady Dvořák</strong>
+          <span>Návrh, výroba a montáž po celé ČR včetně Prahy</span>
+        </div>
+      </div>
+
+      <button class="mobile-toggle" type="button">Menu</button>
+
+      <nav>
+  <div class="main-menu-grid">
+    <ul class="main-menu-row main-menu-row-top">
+      <li><a class="" href="index.html">Úvod</a></li>
+      <li><a class="" href="zimni-zahrady-praha.html">Zimní zahrady Praha</a></li>
+      <li><a class="" href="typy-zahrad.html">Typy zahrad</a></li>
+      <li><a class="" href="zastreseni-bazenu.html">Zastřešení bazénů</a></li>
+    </ul>
+
+    <ul class="main-menu-row main-menu-row-bottom">
+      <li><a class="" href="zasklivani-balkonu.html">Zasklívání balkónů</a></li>
+      <li><a class="" href="okna-dvere.html">Okna a dveře</a></li>
+      <li><a class="" href="cenik.html">Ceník</a></li>
+      <li><a class="" href="kontakt.html">Kontakt</a></li>
+      <li><a class="active" href="poptavka.html">Poptávka zdarma</a></li>
+    </ul>
+  </div>
+</nav></div>
+  </header>
+
+
+<section class="hero hero-custom" style="--hero-image:url('https://www.zimni-zahrady.org/images/uvod1.jpg')">
+  <div class="container hero-grid">
+    <div>
+      <div class="breadcrumbs"><a href="index.html">Úvod</a> / Poptávka zdarma</div>
+      <div class="badge">Zdarma a nezávazně</div>
+      <h1>Poptávka bazénu</h1>
+      <p class="lead">Vyplňte základní údaje a parametry bazénu. Připravíme orientační kalkulaci a doporučíme vhodné technické řešení.</p>
+    </div>
+    <div class="hero-card">
+      <h3>Co od Vás potřebujeme vědět?</h3>
+      <ul class="list"><li>Kontaktní údaje</li><li>Typ a rozměry bazénu</li><li>Požadovanou technologii a vybavení</li><li>Fotku místa realizace nebo stavební připravenost</li></ul>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="form-switch">
+    <a href="poptavka.html" class="switch-item">Zimní zahrady</a>
+    <a href="poptavka-okna.html" class="switch-item">Okna</a>
+    <a href="poptavka-bazeny.html" class="switch-item active">Bazény</a>
+    <a href="poptavka-zastreseni.html" class="switch-item">Zastřešení</a>
+  </div>
+</div>
+
+<section class="section section-tight-top">
+  <div class="container">
+    <form class="modern-form" id="quoteForm" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="access_key" value="SEM_VLOZ_WEB3FORMS_KLIC">
+      <input type="hidden" name="subject" value="Nová poptávka z webu – bazény">
+      <input type="hidden" name="from_name" value="Web poptávka – bazény">
+      <input type="checkbox" name="botcheck" class="hidden-botcheck">
+
+      <div class="form-card">
+        <h3>Kontaktní údaje</h3>
+        <div class="form-grid two">
+          <div class="field"><label for="jmeno">Jméno a příjmení *</label><input type="text" id="jmeno" name="Jméno a příjmení" required></div>
+          <div class="field"><label for="telefon">Telefon *</label><input type="tel" id="telefon" name="Telefon" required></div>
+          <div class="field"><label for="emailf">E-mail *</label><input type="email" id="emailf" name="E-mail" required></div>
+          <div class="field"><label for="mesto">Město / obec *</label><input type="text" id="mesto" name="Město / obec" required></div>
+        </div>
+      </div>
+
+      
+      <div class="form-card">
+        <h3>Parametry bazénu</h3>
+        <div class="form-grid three">
+          <div class="field"><label for="typ-bazenu">Typ bazénu *</label><select id="typ-bazenu" name="Typ bazénu" required><option value="">Vyberte</option><option>Skimmer</option><option>Přelivový bazén</option><option>Rodinný bazén</option><option>Plavecký bazén</option><option>Dětský bazén</option></select></div>
+          <div class="field"><label for="tvar-bazenu">Tvar bazénu</label><select id="tvar-bazenu" name="Tvar bazénu"><option>Obdélník</option><option>Ovál</option><option>Kruh</option><option>Atypický tvar</option></select></div>
+          <div class="field"><label for="material-bazen">Materiál</label><select id="material-bazen" name="Materiál bazénu"><option>Polypropylen</option><option>Laminát</option><option>Beton + fólie</option><option>Nevím, rád se poradím</option></select></div>
+          <div class="field"><label for="delka-bazen">Délka bazénu (m)</label><input type="text" id="delka-bazen" name="Délka bazénu" placeholder="např. 6"></div>
+          <div class="field"><label for="sirka-bazen">Šířka bazénu (m)</label><input type="text" id="sirka-bazen" name="Šířka bazénu" placeholder="např. 3"></div>
+          <div class="field"><label for="hloubka-bazen">Hloubka bazénu (m)</label><input type="text" id="hloubka-bazen" name="Hloubka bazénu" placeholder="např. 1,5"></div>
+          <div class="field"><label for="umisteni-bazen">Umístění</label><select id="umisteni-bazen" name="Umístění bazénu"><option>Zapuštěný</option><option>Polozapuštěný</option><option>Nadzemní</option><option>Vnitřní</option></select></div>
+          <div class="field"><label for="barva-bazen">Barva bazénu</label><input type="text" id="barva-bazen" name="Barva bazénu" placeholder="např. modrá, šedá, bílá"></div>
+          <div class="field"><label for="vyuziti-bazen">Využití</label><select id="vyuziti-bazen" name="Využití bazénu"><option>Rodinné koupání</option><option>Plavání</option><option>Relax</option><option>Komerční využití</option></select></div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3>Technologie a vybavení</h3>
+        <div class="choice-grid">
+          <label class="choice"><input type="checkbox" name="Technologie[]" value="Filtrace"><span>Filtrace</span></label>
+          <label class="choice"><input type="checkbox" name="Technologie[]" value="Protiproud"><span>Protiproud</span></label>
+          <label class="choice"><input type="checkbox" name="Technologie[]" value="Ohřev vody"><span>Ohřev vody</span></label>
+          <label class="choice"><input type="checkbox" name="Technologie[]" value="Tepelné čerpadlo"><span>Tepelné čerpadlo</span></label>
+          <label class="choice"><input type="checkbox" name="Technologie[]" value="LED osvětlení"><span>LED osvětlení</span></label>
+          <label class="choice"><input type="checkbox" name="Technologie[]" value="Schody"><span>Vnitřní schody</span></label>
+          <label class="choice"><input type="checkbox" name="Technologie[]" value="Slaná voda"><span>Slaná voda</span></label>
+          <label class="choice"><input type="checkbox" name="Technologie[]" value="Automatické dávkování"><span>Automatické dávkování chemie</span></label>
+          <label class="choice"><input type="checkbox" name="Technologie[]" value="Příprava pro zastřešení"><span>Příprava pro zastřešení</span></label>
+        </div>
+      </div>
+
+
+      <div class="form-card">
+        <h3>Upřesnění</h3>
+        <div class="field">
+          <label for="poznamka">Poznámka</label>
+          <textarea id="poznamka" name="Poznámka" rows="6" placeholder="Napište požadovaný termín, způsob využití bazénu, stavební připravenost, typ filtrace nebo další požadavky."></textarea>
+        </div>
+        <div class="field">
+          <label for="foto">Přiložit fotografii nebo výkres</label>
+          <input type="file" id="foto" name="Fotografie nebo výkres" accept=".jpg,.jpeg,.png,.webp,.pdf">
+          <small class="muted">Můžete přiložit fotku místa realizace, orientační náčrt nebo inspirativní obrázek.</small>
+        </div>
+        <label class="agree">
+          <input type="checkbox" name="Souhlas" required>
+          <span>Souhlasím se zpracováním osobních údajů pro účely vyřízení poptávky. *</span>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Odeslat poptávku</button>
+          <a href="tel:+420606212000" class="btn btn-light">Zavolat</a>
+          <a href="mailto:centrumzahrad@email.cz" class="btn btn-outline btn-dark-outline">Napsat e-mail</a>
+        </div>
+        <p id="formStatus" class="form-status"></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Zimní zahrady Dvořák</strong><br>
+        Zimní zahrady na míru, plastové, hliníkové i dřevěné konstrukce.<br>
+        <a href="tel:+420606212000">+420 606 212 000</a> · <a href="mailto:centrumzahrad@email.cz">centrumzahrad@email.cz</a>
+      </div>
+      <div>© 2026 Zimní zahrady Dvořák. Všechna práva vyhrazena.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

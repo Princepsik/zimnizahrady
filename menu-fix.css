@@ -1,0 +1,64 @@
+
+/* === MENU FIX OVERRIDE (safe, drop-in) === */
+
+/* Ensure main menu renders as two rows with consistent alignment */
+.main-menu {
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Remove bullets and normalize items */
+.main-menu li {
+  list-style: none;
+}
+
+/* Button-like links */
+.main-menu li a {
+  display: block;
+  text-align: center;
+  padding: 18px 16px;
+  border-radius: 18px;
+  font-weight: 700;
+  background: rgba(13, 109, 139, 0.06);
+  transition: 0.2s ease;
+  text-decoration: none;
+}
+
+.main-menu li a:hover,
+.main-menu li a.active {
+  background: rgba(13, 109, 139, 0.12);
+}
+
+/* Force second row items to align left under the grid */
+.main-menu li:nth-child(6) { grid-column: 1 / 2; }
+.main-menu li:nth-child(7) { grid-column: 2 / 3; }
+.main-menu li:nth-child(8) { grid-column: 3 / 4; }
+.main-menu li:nth-child(9) { grid-column: 4 / 5; }
+
+/* Hide any legacy submenu that is causing bullet list to appear */
+.submenu {
+  display: none !important;
+}
+
+/* Optional: make the CTA stand out a bit */
+.main-menu li:last-child a {
+  background: rgba(13, 109, 139, 0.18);
+}
+
+/* Responsive fallback */
+@media (max-width: 1100px) {
+  .main-menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-menu li:nth-child(6),
+  .main-menu li:nth-child(7),
+  .main-menu li:nth-child(8),
+  .main-menu li:nth-child(9) {
+    grid-column: auto;
+  }
+}
